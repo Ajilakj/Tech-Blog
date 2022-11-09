@@ -1,22 +1,13 @@
-// const Location = require('./Location');
-// const Traveller = require('./Traveller');
-// const Trips = require('./Trips');
+const User = require('./User');
+const Project = require('./Project');
 
-// Traveller.hasMany(Location, {
-//   foreignKey: 'traveller_id',
-// });
+User.hasMany(Project, {
+  foreignKey: 'user_id',
+  onDelete: 'CASCADE'
+});
 
-// // Location.belongsTo(Traveller, {
-// //   foreignKey: 'traveller_id',
-// // });
+Project.belongsTo(User, {
+  foreignKey: 'user_id'
+});
 
-// // Traveller.hasMany(Trips, {
-// //   foreignKey: 'traveller_id',
-// // });
-
-// // Trips.belongsTo(Traveller, {
-// //   foreignKey: 'traveller_id',
-// // });
-// Traveller.belongsToMany(Location, { through: 'Trips',uniqueKey:false });
-// Location.belongsToMany(Traveller, { through: 'Trips',uniqueKey:false });
-// module.exports = { Location, Traveller, Trips };
+module.exports = { User, Project };
