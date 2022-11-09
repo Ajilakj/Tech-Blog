@@ -14,7 +14,7 @@ router.get('/', async (req, res) => {
     });
 
     const blogs = dbBlogData.map((blog) =>
-      gallery.get({ plain: true })
+    blog.get({ plain: true })
     );
 
     req.session.save(() => {
