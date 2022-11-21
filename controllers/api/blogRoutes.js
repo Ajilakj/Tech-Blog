@@ -28,33 +28,33 @@ router.get('/', async (req, res) => {
   }
 });
 
-// GET one blog
-// router.get('/blogs/:id', async (req, res) => {
-//   try {
-//     const dbBlogsDataId = await Blog.findByPk(req.params.id, {
-//       include: [
-//         {
-//           model: Blog,
-//           attributes: [
-//             'id',
-//             'name',
-//             'description',
-//             'date_created',
-//             'user_id',
-//           ],
-//         },
-//       ],
-//     });
+//GET one blog
+router.get('/blog/:id', async (req, res) => {
+  try {
+    const dbBlogsDataId = await Blog.findByPk(req.params.id, {
+      include: [
+        {
+          model: Blog,
+          attributes: [
+            'id',
+            'name',
+            'description',
+            'date_created',
+            'user_id',
+          ],
+        },
+      ],
+    });
 
-//     const blog = dbBlogsDataId.get({ plain: true });
-//     res.render('blog', {
-//       blog,
-//     });
-//   } catch (err) {
-//     console.log(err);
-//     res.status(500).json(err);
-//   }
-// });
+    const blog = dbBlogsDataId.get({ plain: true });
+    res.render('blog', {
+      blog,
+    });
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
+});
 
 
 module.exports = router;

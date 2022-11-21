@@ -1,10 +1,38 @@
 [
   {
+    "id" :1,
     "name": "The Ultimate Tech Quiz",
-    "description": "A web app that will give users 10 new technical questions each day and track their progress in things like programming, cybersecurity, database architecture, and more!"
+    "description": "A web app that will give users 10 new technical questions each day and track their progress in things like programming, cybersecurity, database architecture, and more!",
+    "user_id":1
   },
   {
-    "name": "The Ultimate Tech Quiz copy",
-    "description": "COPY !!!!!!!!!!! A web app that will give users 10 new technical questions each day and track their progress in things like programming, cybersecurity, database architecture, and more!"
+    "id" :2,
+    "name": "The Ultimate Tech Quiz copy 1",
+    "description": "COPY !!!!!!!!!!! A web app that will give users 10 new technical questions each day and track their progress in things like programming, cybersecurity, database architecture, and more!",
+    "user_id":2
+  },
+  {
+    "id" :3,
+    "name": "The Ultimate Tech Quiz copy 2",
+    "description": "A web app that will give users 10 new technical questions each day and track their progress in things like programming, cybersecurity, database architecture, and more!",
+    "user_id":1
+  },
+  {
+    "id" :4,
+    "name": "The Ultimate Tech Quiz copy 3",
+    "description": "COPY !!!!!!!!!!! A web app that will give users 10 new technical questions each day and track their progress in things like programming, cybersecurity, database architecture, and more!",
+    "user_id":2
+  },
+  {
+    "id" :5,
+    "name": "The Ultimate Tech Quiz copy 4",
+    "description": "A web app that will give users 10 new technical questions each day and track their progress in things like programming, cybersecurity, database architecture, and more!",
+    "user_id":1
+  },
+  {
+    "id" :6,
+    "name": "The Ultimate Tech Quiz copy 5",
+    "description": "COPY !!!!!!!!!!! A web app that will give users 10 new technical questions each day and track their progress in things like programming, cybersecurity, database architecture, and more!",
+    "user_id":1
   }
 ]
