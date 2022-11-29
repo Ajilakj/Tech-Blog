@@ -1,6 +1,13 @@
 const router = require('express').Router();
 const { User, Blog } = require('../models');
 
+router.get("/newuser", async (req, res) => {
+  res.render("signup");
+});
+
+   router.get('/login', async (req, res) => {
+    res.render('login-user');
+  });
 // router.get('/', async (req, res) => {
 //   try {
 //     const dbBlogsData = await Blog.findAll();
@@ -24,11 +31,11 @@ router.get("/", async (req, res) => {
   //     ]
   //   }
   // );
-  console.log(dbBlogsData);
+  // console.log(dbBlogsData);
   const blogData = dbBlogsData.map((blog) =>
   blog.get({ plain: true })
   );
-  console.log(blogData);
+  // console.log(blogData);
 
   res.render("homepage", {blogData});
 });
